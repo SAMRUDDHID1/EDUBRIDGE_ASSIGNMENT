@@ -1,0 +1,5 @@
+create table Students(student_id int ,first_name varchar(20),last_name varchar(20),date_of_birth date,gpa decimal(3,2));
+desc Students;
+insert into Students values(101,"Rahul","Agrawal","1997-11-11",9.2);
+insert into Students values(101,"Ramesh","Verma","1997-12-13",7.2);
+select * from Students;

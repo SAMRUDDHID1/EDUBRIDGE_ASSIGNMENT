@@ -1,0 +1,29 @@
+create database college;
+use college;
+create table library_details (s_id int,s_name varchar(20),books_name varchar(20));
+desc library_details;
+insert into library_details values(1001,"Sam","Java,oracle,python");
+insert into library_details values(1002,"Rohan","C,Python,ISTQB");
+insert into library_details values(1003,"Sayli","Java,Python");
+select * from library_details;
+
+create table books_issued (s_id int,name_book varchar(20));
+desc books_issued;
+insert into books_issued values(1001,"Java");
+insert into books_issued values(1001,"Oracle");
+insert into books_issued values(1001,"Python");
+select * from books_issued;
+
+create table Course(s_id int,s_name varchar(20),course_id int);
+desc Course;
+insert into Course values(1001,"Sam",01);
+insert into Course values(1002,"Rohan",02);
+insert into Course values(1003,"Sayli",03);
+select * from Course;
+
+create table details_course(course_id int,course_name varchar(20));
+desc details_course;
+insert into details_course values(01,"CS");
+insert into details_course values(02,"EEE");
+insert into details_course values(03,"EC");
+select * from details_course;
